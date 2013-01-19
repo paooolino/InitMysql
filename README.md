@@ -23,6 +23,10 @@ A PHP class that helps in MySQL database tables creation.
 			> $initier -> createTable("lessons", "name");
 			> $initier -> createTable("slides", "id_lesson:EXT>lessons, title, text:TEXT");
 			
+		5) At the end, it's possible to create the helper tables for the custom control panel.
+		
+			> $initier -> createCustomHelperTables( "prepend" );
+			
 	METHODS
 	
 		createTable(<string: tableName>, <string: fields>);
